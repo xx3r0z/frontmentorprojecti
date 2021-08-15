@@ -37,11 +37,11 @@ span{
 @media (min-width:800px){
     #edit{
         font-size: 2.2rem;
-        padding: 12% 15% 0% 10%;
+        padding: 12% 15% 0% 11%;
     }
     #h2edit{
         font-size: 1rem;
-        padding: 0% 15% 0% 10%;
+        padding: 0% 15% 0% 11%;
     }
     .little h1{
         text-align: left;
