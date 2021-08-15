@@ -1,0 +1,49 @@
+#edit {
+    color: white;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 10% 10% 0%;
+}
+
+h2 {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca, sans-serif;
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+.little h1{
+    color: white;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+}
+.little h2{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+#h2edit{
+    padding: 0% 10%;
+    line-height: 1.2rem;
+}
+
+@media (min-width:800px){
+    #edit{
+        font-size: 2.2rem;
+        padding: 12% 15% 0% 10%;
+    }
+    #h2edit{
+        font-size: 1rem;
+        padding: 0% 15% 0% 10%;
+    }
+    .little h1{
+        text-align: left;
+    }
+}

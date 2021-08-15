@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	height: 100vh;
+	box-sizing: border-box;
+	background-color: hsl(233, 47%, 7%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#maincontainer {
+	border-radius: 0.5rem;
+	width: 90%;
+	height: 85%;
+	background-color: hsl(244, 38%, 16%);
+	display: flex;
+	flex-direction: column;
+}
+
+#image {
+	width: 100%;
+	height: 35%;
+	border-top-right-radius: 0.5rem;
+	border-top-left-radius: 0.5rem;
+	background-color: hsl(277, 64%, 61%);
+}
+
+#picture {
+	width: 100%;
+	height: 100%;
+	border-top-right-radius: 0.5rem;
+	border-top-left-radius: 0.5rem;
+	filter: opacity(75%);
+}
+
+#text-container {
+	width: 100%;
+	height: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#second-texts {
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-grow: 1;
+}
+
+.texts:nth-of-type(1) {
+	width: 100%;
+	height: 25%;
+	text-align: center;
+}
+
+.texts:nth-of-type(2) {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+}
+
+
+@media (min-width:800px) {
+	#maincontainer {
+		flex-direction: row-reverse;
+		height: 65vh;
+	}
+	#image {
+		width: 90%;
+		height: 100%;
+		border-top-right-radius: 0.5rem;
+		border-top-left-radius: 0rem;
+		border-bottom-right-radius: 0.5rem;
+		background-color: hsl(277, 64%, 61%);
+	}
+	#picture {
+		border-top-right-radius: 0.5rem;
+		border-top-left-radius: 0rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	#text-container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#second-texts {
+		width: 100%;
+		height: 30%;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.texts:nth-of-type(1) {
+		width: 100%;
+		height: 40%;
+		text-align: left;
+	}
+	.texts:nth-of-type(2){
+		width: 100%;
+		height: 30%;
+		text-align: left;
+	}
